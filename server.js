@@ -11,6 +11,7 @@ http
       var fin = inicio + 8 + 9;//
       var text = req.url;
       text = text.substring(inicio, fin);
+      res.write(text);
     } else {
       res.write("Esto No Es Una Jugada");
     }
