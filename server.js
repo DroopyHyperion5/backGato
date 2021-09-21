@@ -5,7 +5,7 @@ http
   .createServer(function (req, res) {
     res.writeHead(200, { "Content-Type": "text/plain" });
 
-    if (req.url.lastIndexOf("juega")) {
+    if (req.url.lastIndexOf("juega")!==-1) {
       res.write("Let´s Go");
     }
     else{
